@@ -1,0 +1,19 @@
+export const CALL_TO_REFEREE_ADDED = 'CALL_TO_REFEREE_ADDED';
+export const CALL_TO_REFEREE_ASSIGNED = 'CALL_TO_REFEREE_ASSIGNED';
+export const CALL_TO_REFEREE_RESOLVED = 'CALL_TO_REFEREE_RESOLVED';
+export const CALL_UNASSIGNED = 'CALL_TO_REFEREE_UNASSIGNED';
+export const STATUS_NOT_ASSIGNED = 'NOT_ASSIGNED';
+export const STATUS_IN_REVIEW = 'IN_REVIEW';
+export const STATUS_RESOLVED = 'RESOLVED';
+
+export const STATUS_MAPPING = {
+  [STATUS_NOT_ASSIGNED]: 'Not assigned',
+  [STATUS_IN_REVIEW]: 'In review',
+  [STATUS_RESOLVED]: 'Resolved'
+};
+
+export const COLOR_MAPPING = {
+  [STATUS_NOT_ASSIGNED]: 'red',
+  [STATUS_IN_REVIEW]: 'yellow',
+  [STATUS_RESOLVED]: 'green'
+};

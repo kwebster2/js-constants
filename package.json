@@ -1,0 +1,40 @@
+{
+    "name": "@duelme/js-constants",
+    "version": "1.0.0",
+    "description": "Dubbz Constants",
+    "scripts": {
+      "linter": "eslint . --fix",
+      "linter-ci": "eslint ."
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/duelme/js-constants.git"
+    },
+    "author": "",
+    "license": "UNLICENSED",
+    "bugs": {
+      "url": "https://github.com/duelme/js-constants/issues"
+    },
+    "homepage": "https://github.com/duelme/js-constants/readme",
+    "dependencies": {
+      "@semantic-release/commit-analyzer": "^9.0.2"
+    },
+    "devDependencies": {
+      "@babel/cli": "^7.17.3",
+      "@babel/core": "^7.17.5",
+      "@babel/node": "^7.16.8",
+      "@babel/plugin-transform-runtime": "^7.17.0",
+      "@babel/preset-env": "^7.16.11",
+      "eslint": "^8.9.0",
+      "eslint-plugin-import": "^2.25.4",
+      "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
+      "husky": "^7.0.4",
+      "lint-staged": "^12.3.4"
+    },
+    "lint-staged": {
+      "src/**/*.{js,jsx,ts,tsx,css}": [
+        "eslint --fix"
+      ]
+    }
+  }
+  

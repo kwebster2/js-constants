@@ -1,0 +1,23 @@
+name: Linter
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  linter:
+    runs-on: ubuntu-latest
+    env:
+      APISDK_NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Git clone repository
+        uses: actions/checkout@v2
+      - name: Setup Node JS
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.13.2
+      - run: npm install
+      - run: npm run linter-ci
